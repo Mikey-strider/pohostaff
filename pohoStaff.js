@@ -2,7 +2,7 @@ function modifyContent() {
     const poHoStaff = document.querySelector(".content");
 
     poHoStaff.innerHTML = `
-      <h2>Meet our Staff</h2>
+      <h2>Meet our Staff:</h2>
       <br>
       <br>
       <br>
@@ -57,11 +57,19 @@ function modifyContent() {
       }
 
       h2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         color: #ff0303;
       }
 
       h3 {
-        color: #ff0303;
+        color: #ff4040;
+        text-decoration: underline;
+        background-color: #10101021;
+        border-radius: 5px;
+        box-shadow: 4px 4px 7px #101010bd;
       }
 
       li {
@@ -72,6 +80,8 @@ function modifyContent() {
       }
 
       .staff-img {
+        padding: 2px;
+        margin: 10px;
         border: 2px solid red;
         height: 300px;
         width: 285px;
